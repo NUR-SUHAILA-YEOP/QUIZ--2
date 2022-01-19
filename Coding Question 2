@@ -1,0 +1,33 @@
+package quiz2;
+import java.util.Scanner;
+class Looping {
+
+	public static void main(String[] args) {
+		//Quiz 2: Q2
+		// Write a program that prompts the user for a positive integer. 
+		//The program shall read the input as int; and print the "reverse" of the input integer. For examples:
+		//Enter a positive integer: 12345
+		//The reverse is: 54321
+		
+		int num, n ;
+	
+			
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.print("Please enter number positive integer: ");
+		num = sc.nextInt();
+		
+		n = num;
+		int reverse=0, div;
+	      while (n >0) {
+	         div = n %10;
+	         reverse = (reverse*10)+ div;
+	         n= n/10;
+	      }
+	      
+		System.out.print("The reverse number is: " + reverse);
+	
+		
+	}
+
+}
